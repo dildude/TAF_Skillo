@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="methods">
+    <test name="Calculation Suite test">
+        <groups>
+             <run>
+                    <include name="groupAddition"/>
+                    <include name="groupDivis"/>
+                    <include name="groupMultip"/>
+                    <include name="groupSubtrsc"/>
+                    <include name="groupModulus"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.Mincho.Skillo.automation.AdditionTest">
+                <methods>
+                    <include name="additionValid"/>
+                </methods>
+            </class>
+            <class name="org.Mincho.Skillo.automation.DivisionTest">
+                <methods>
+                    <include name="division"/>
+                </methods>
+            </class>
+            <class name="org.Mincho.Skillo.automation.ModulusTest">
+                <methods>
+                    <include name="modulus"/>
+                </methods>
+            </class>
+            <class name="org.Mincho.Skillo.automation.MultiplicationTest">
+                <methods>
+                    <include name="multiplication"/>
+                </methods>
+            </class>
+            <class name="org.Mincho.Skillo.automation.SubtractionTest">
+                <methods>
+                    <include name="subtraction"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
